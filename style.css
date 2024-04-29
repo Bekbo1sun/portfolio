@@ -644,3 +644,10 @@ span {
 .footer-iconTop a i:hover {
   color: var(--main-color);
 }
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+}
