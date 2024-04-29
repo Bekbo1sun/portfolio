@@ -686,6 +686,10 @@ span {
   z-index: 98;
 }
 
+.animate.home-img {
+  width: 50%;
+}
+
 .logo .animate,
 .navbar .animate,
 #menu-icon .animate,
