@@ -185,4 +185,6 @@ section {
   background: transparent;
   border: .2rem solid var(--main-color);
   border-radius: 50%;
+  font-size: 20px;
+  color:  var(--main-color);
 }
