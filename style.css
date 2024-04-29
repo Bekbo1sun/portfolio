@@ -127,6 +127,9 @@ section {
   background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-position: -33rem 0;
+}
+
+.home.show-animate .home-content .text-animate h3 {
   animation: homeBgText 6s linear infinite;
   animation-delay: 2s;
 }
@@ -140,6 +143,9 @@ section {
   height: 100%;
   border-right: 2px solid var(--main-color);
   z-index: -1;
+}
+
+.home.show-animate .home-content .text-animate h3::before {
   animation: homeCursorText 6s linear infinite;
   animation-delay: 2s;
 }
@@ -257,7 +263,7 @@ section {
 }
 
 .home-imgHover {
-  position: absolute;
+  position: relative;
   top: 0;
   right: 0;
   width: 45%;
@@ -656,6 +662,11 @@ span {
   background: var(--second-bg-color);
 }
 
+.footer-text,
+.footer-iconTop {
+  position: relative;
+}
+
 .footer-text p {
   font-size: 1.6rem;
 }
@@ -707,7 +718,7 @@ span {
   right: 0;
   width: 100%;
   height: 100%;
-  background: yellowgreen;
+  background: var(--bg-color);
   z-index: 98;
 }
 
@@ -729,6 +740,11 @@ span {
   animation: none;
 }
 
+section:nth-child(odd) .animate.scroll,
+.footer .animate.scroll {
+  background: var(--second-bg-color);
+}
+
 .education .education-box .animate.scroll {
   width: 105%;
 }
@@ -737,7 +753,8 @@ span {
 .education.show-animate .animate.scroll,
 .education.show-animate .education-box .animate.scroll,
 .skills.show-animate .animate.scroll,
-.contact.show-animate .animate.scroll {
+.contact.show-animate .animate.scroll,
+.footer.show-animate .animate.scroll {
   transition-delay: calc(.3s * var(--i));
   width: 0;
 }
@@ -764,6 +781,12 @@ span {
 
   .footer {
     pad: 2rem 4%;
+  }
+}
+
+@media (max-width: 850px) {
+  .animate.home-img {
+    width: 55%;
   }
 }
 
